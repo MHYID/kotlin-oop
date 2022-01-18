@@ -7,7 +7,7 @@ class Person{
     var lastName: String = ""
 
 
-    fun sayHello(name: String): Unit{
+    fun sayHello(name: String){
         println("$name adalah masa depan $middleNAme")
     }
 
@@ -15,6 +15,11 @@ class Person{
     fun sayHello(nama1: String, nama2: String) {
         println("$nama1 $nama2 adalah masa depan $middleNAme Aamiin...")
     }
+
+//    this keyword
+fun sayFuture(firstName: String, lastName: String) {
+    println("$firstName $lastName adalah masa depan ${this.lastName} Aamiin...")
+}
 
     fun run(){
         println("I'm Run")
